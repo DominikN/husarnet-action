@@ -37,11 +37,11 @@ jobs:
         cache-key: husarnet-v
 ```
 
-| input | required | description |
-| - | - | - |
-| `join-code` | yes | A Join Code for the Husarnet network you want to connect to. Find your Join Code at https://app.husarnet.com/  |
-| `hostname` | no | A hostname under which this workflow will be available in your Husarnet network. Default value: `my-github-action` |
-| `cache-key` | no | Thanks to cache, IPv6 address will be the same in the following job runs. Another cache means generating another peer. Useful while using matrix. |
+| input | required | default value | description |
+| - | - | - | - |
+| `join-code` | yes |  | A Join Code for the Husarnet network you want to connect to. Find your Join Code at https://app.husarnet.com/  |
+| `hostname` | no | `my-github-action` | A hostname under which this workflow will be available in your Husarnet network. |
+| `cache-key` | no | `husarnet-volume` | Thanks to cache, IPv6 address will be the same in the following job runs. Another cache means generating another peer. Useful while using matrix. |
 
 ## Outputs
 
